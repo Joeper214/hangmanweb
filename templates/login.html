@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel = "stylesheet"  href = "style.css">
+
+    <link rel = "stylesheet"  href = "{{ url_for ('static', filename='css/bootstrap.min.css')}}">
+    <title> Site</title>
+</head>
+
+<body style="background-color:white;">
+<!--<div id = "header">
+<br> MD Login
+</div>-->
+
+<nav class="navbar navbar-default" role="navigation" style = "background-color :skyblue">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+       Hangman Login
+      </a>
+    </div>
+  </div>
+</nav>
+<content>
+
+    <div class = "container">
+        <div class = "col-sm-8 col-sm-offset-4">
+            <div class = "col-sm-12 panel panel-default" style = "margin-top: 10%; padding-top: 30px; padding-bottom :30px; background-color:dirty-white;   height : 500px ; width : 350px ; box-shadow: 10px 10px 5px #888888" >
+                <div class = "col-sm-12">
+                <form>
+
+                  <img src="{{ url_for ('static', filename='Hangman.jpg')}}" class = "img-responsive " style = "height : 240px; width : 500px">
+                  <div class = "form-group" style = "padding-top : 10px">
+                    <input type = "text" class = "form-control" placeholder = "Username">
+                  </div>
+                  <div class = "form-group">
+                      <input type = "password" class = "form-control" placeholder = "Password">
+                  </div>
+                  <br />
+                  <div class = "form-inline">
+                    <div class = "checkbox" stlyle = "margin-top :10px">
+                      <label style = "font-size : 14px">
+                          <input type = "checkbox">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Remember me?
+                      </label>
+                      <a href = "default.html">Forgot Password </a>
+                    </div>
+
+                    <button type="submit" class="btn btn-default pull-right" ><a href="index.html">Login</a></button><br/>
+                </div><br />
+                <br />
+
+                </form>
+            </div>
+          </div>
+          <div  class="col-sm-8 col-sm-offset-1">
+              No Account yet?
+              <a href = '/register'>Register here </a>
+          </div>
+        </div>
+    </div>
+</content>
+</body>
+
+
+</html>

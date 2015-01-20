@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<header>
+    <title>Hangman Game</title>
+</header>
+<body>
+Start Guessing:
+
+<h2> {{data.word}} <>
+
+
+{{data.guess}}
+
+<form method="POST" action="/play">
+  <input type="text" maxlength="1" name="input_char">
+  <input type="hidden" name="word" value="{{data.true_word}}">
+  <input type="submit" name="subchar">
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Webpage sample</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<nav><ul>
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="login.html">Logout</a></li>
+
+
+		</ul></nav>
+	</header>
+
+	<div class="mainContent">
+
+	   <div class="content">
+		<tr>
+            <td>
+			<p>
+                     {% if data.message %}
+		     <h2><br />{{data.message}}</h2>
+		     {% endif %}
+			<h2><br />Your Level:{{data.level}}</h2>
+			<h2><br />Your Score:{{data.score}}</h2>
+			</p>
+	     <a href="/hangman" class="btn btn-lg  btn-primary"> Try again?</a>
+	     <a href="/highscores" class="btn btn-lg btn-warning">View Highscores </a>
+
+		      </td>
+          </tr>
+
+
+
+
+	    </div>
+     </div>
+
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 <a href="#">Game inc</a></p>
+	</footer>
+
+</body>
+</html>

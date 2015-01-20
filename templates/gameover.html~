@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Webpage sample</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<nav><ul>
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="login.html">Logout</a></li>
+
+
+		</ul></nav>
+	</header>
+
+	<div class="mainContent">
+
+	   <div class="content">
+		<tr>
+            <td>
+			<p>
+                     {% if data.message %}
+		     <h2><br />{{data.message}}</h2>
+		     {% endif %}
+			<h2><br />Level:{{data.level}}</h2>
+			<h2><br />Score:{{data.score}}</h2>
+			<h2><br />Word: {{data.word}} </h2>
+			<h2><br />Guesses: {{data.guess}} </h2>
+			</p>
+
+	     <form method="POST" action="/play">
+	       <input type="text" maxlength="1"  class="form-control" name="input_char">
+	       <input type="hidden" name="word" value="{{data.true_word}}">
+	       <input type="hidden" name="score" value="{{data.score}}">
+	       <input type="hidden" name="lives" value="{{data.lives}}"></br>
+	       <input type="submit" name="subchar" class="btn btn-default pull-right" value="submit">
+	     </form>
+            <h2><br />Remaining Lives:{{data.lives}}</h2>
+		      </td>
+          </tr>
+
+
+
+
+	    </div>
+     </div>
+
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 <a href="#">Game inc</a></p>
+	</footer>
+
+</body>
+</html>

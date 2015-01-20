@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+<title>Registration</title>
+
+<link rel="stylesheet" href="{{ url_for ('static', filename='css/bootstrap.min.css')}}">  </link>
+
+<meta http-equiv="Content-Type" content="text/html; charset="UTF-8"/>
+
+<style type="text/css">
+  div {color: black; }
+  body {background-color: white;}
+  .container {max-width: 700px; margin-left:auto; margin-right:auto;}
+  .header h1 {color:white; line-height:80px; text-align: center; background-color:gray}
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+  <div class="header">
+  <h1> Hangman Game Registration</h1>
+  </div>
+
+<form role="form">
+<div class="col-sm-8 col-sm-offset-2" style="background-color: white; height: auto;">
+
+  <div>
+    <label>Please Fill the information need</label>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleLastName">Last Name</label>
+    <input type="Last Name" class="form-control" id="exampleLastName" placeholder="Enter last name">
+  </div>
+
+<div class="form-group">
+    <label for="exampleFirstName">First Name</label>
+    <input type="email" class="form-control" id="exampleFirstName" placeholder="Enter first name">
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Age</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter age">
+  </div>
+
+  <div>
+    <label>Gender</label>
+  </div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Male
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Female
+  </label>
+</div>
+
+
+  <div class="form-group">
+    <label for="exampleEmail">Email</label>
+    <input type="Email" class="form-control" id="exampleInputEmail" placeholder="Ex. ...@gmail.com">
+  </div>
+
+  <div class="form-group">
+    <label for="examplePassword">Password</label>
+    <input type="password" class="form-control" id="examplePassword" placeholder="password">
+  </div>
+
+  <div class="form-group">
+    <label for="examplePassword"> Re-Password</label>
+    <input type="password" class="form-control" id="examplePassword" placeholder="repassword">
+  </div>
+
+
+  <div>
+    <label></label>
+  </div>
+
+  <button type="register" class="btn btn-default">Register</button>
+</form>
+
+
+  <div>
+    <label></label>
+    <label></label>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

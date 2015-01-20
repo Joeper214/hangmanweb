@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Webpage sample</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<nav><ul>
+			<li class="active"><a href='/index'>Home</a></li>
+			<li><a href='/'>Logout</a></li>
+
+
+		</ul></nav>
+	</header>
+
+	<div class="mainContent">
+		<div class="content">
+				<article class="topcontent">
+					<tr><td>
+<header>
+						<h2>Click Play</h2>
+					</header>
+					<content>
+					<a href='/game' class="btn btn-default pull-right">Play</a><br/>
+
+					</content>
+					<footer>
+						<p class="post-info">Play for action</p>
+					</footer>
+</td></tr>
+
+<tr><td>
+
+					<header>
+						<h2><br />Leader Score Board</h2>
+					</header>
+					<content>
+				<a href='/leadscore' class="btn btn-default pull-right">Score</a><br/>
+					</content>
+
+
+
+					<footer>
+						<p class="post-info">Check The top scored player</p>
+					</footer>
+					</td></tr>
+
+				</article>
+
+		</div>
+
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 <a href="#">Game inc</a></p>
+	</footer>
+
+</body>
+</html>

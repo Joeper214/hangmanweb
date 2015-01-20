@@ -1,0 +1,13 @@
+sudo su
+find vagrant file
+vagrant up
+vagrant ssh
+
+cd workspace
+ #got to workspace
+
+
+goto ferris files
+
+app-server
+

@@ -1,0 +1,15 @@
+<html>
+
+<body>
+  
+  <h1>{{name}}</h1>
+
+  {% for name in d %}
+
+  <h1>  {{name}} !! </h1> <br/>
+
+  {% endfor %}
+
+</body>
+
+</html>

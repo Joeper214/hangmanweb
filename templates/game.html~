@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Webpage sample</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="body">
+
+	<header class="mainHeader">
+		<nav><ul>
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="login.html">Logout</a></li>
+
+
+		</ul></nav>
+	</header>
+
+	<div class="mainContent">
+
+	   <div class="content">
+		<tr>
+            <td>
+			<p>
+			<h2><br />Level:2</h2>
+			<h2><br />Score:150</h2>
+			<h2><br />Word:qwerty </h2>
+			</p>
+                    <input rows="3" cols="1"; maxlength="1"></input>
+ 		             <button type="submit" class="btn btn-default pull-right" >
+                     <a href="#">submit</a></button>
+            <h2><br />Life:6</h2>
+		      </td>
+          </tr>
+
+
+
+
+	    </div>
+     </div>
+
+
+
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 <a href="#">Game inc</a></p>
+	</footer>
+
+</body>
+</html>
